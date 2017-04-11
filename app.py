@@ -13,6 +13,7 @@ def login_required(f):
             return redirect(url_for('login'))
     return decorated_function
 
+#TODO Change every "make_response()" to "send_file()", remove the .read()
 @app.before_request
 def before_request():
     initialize_db()
@@ -23,15 +24,15 @@ def teardown_request(exception):
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return make_response(open("templates/index.html").read())
 
 @app.route("/register")
 def register():
-    return render_template("register.html")
+    return make_response(open("templates/register.html").read())
 
 @app.route("/login")
 def login():
-    return render_template("login.html")
+    return make_response(open("templates/login.html").read())
 
 @app.route("/logout")
 @login_required
@@ -41,7 +42,7 @@ def logout():
 @app.route("/stats")
 @login_required
 def stats():
-    return render_template("stats.html")
+    return make_response(open("templates/stats.html").read())
 
 @app.route("/new_time")
 @login_required
