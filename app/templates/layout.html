@@ -3,31 +3,26 @@
 
 <head>
     <meta charset="UTF-8" />
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css"
     href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
     <title>{{ title }}</title>
 </head>
 
 <body>
-    <nav role="navigation">
-        <div id="nav-links" class="row">
-            <div class="col-sm-offset-1 col-lg-1 col-md-2 col-sm-3">
-                <a href="#home">Home</a>
+    <div id="main-container">
+        <nav role="navigation">
+            <div id="nav-links" class="row">
+                <a href="#home">HOME</a>
+                <a href="#whatever">WHATEVER</a>
             </div>
-            <div class="col-lg-1 col-md-2 col-sm-3">
-                <a href="#whatever">Whatever</a>
-            </div>
-        </div>
-    </nav>
-    {% block content %}{% endblock %}
+        </nav>
+        <article>
+            {% block content %}{% endblock %}
+        <article>
+    </div>
 </body>
 
 </html>
