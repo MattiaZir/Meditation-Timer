@@ -8,11 +8,16 @@ html, body, div, span, h1 {
     padding: 0;
 }
 
-#main-container {
+main {
+    height: 100%;
+}
+
+#wrapper {
     background-color: #CDDEAF;
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 #nav-links {
@@ -32,4 +37,34 @@ html, body, div, span, h1 {
     transition: all 150ms linear;
     color: #EEF4E4;
     text-shadow: 0px -1px 0px #EEF4E4;
+}
+
+#timer-container {
+    margin-top: 15%;
+    text-align: center;
+}
+
+#timer-container .timer {
+    padding-bottom: 10px;
+    color: #A4C46D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    text-shadow: 0px -1px 0px #A4C46D;
+}
+
+.btn-default {
+    background-color: #818D92;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px -1px 0px #818D92;
+    padding: 10px 30px;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    color: #F2F1F1;
+}
+
+.btn-default:hover {
+    transition: all 150ms linear;
+    background-color: #A3ACAF;
+    box-shadow: 0px -1px 0px #A3ACAF;
 }
