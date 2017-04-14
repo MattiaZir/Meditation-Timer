@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+html. body, div, span, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 40px;
+}
+
+.navbar a {
+    color: black;
+}
+
+.container-fluid {
+    background: #8FA5BC;
+    width: 100%;
+    height: 100%;
+}
+
+#nav-links {
+    padding-top: 10px;
+}
