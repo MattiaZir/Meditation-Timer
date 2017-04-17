@@ -4,3 +4,5 @@
 *.pyc
 
 Flask/
+
+app/\.sass-cache/

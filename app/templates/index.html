@@ -3,12 +3,26 @@
 {% block content %}
     <div id="timer-container">
         <form>
-            <div class="timer">
-                <input type="number" name="hours" value="00" min="1" max="59">
-                <label for="minutes">:</label>
-                <input type="number" name="minutes" value="00" max="59">
-                <label for="seconds">:</label>
-                <input type="number" name="seconds" value="00" max="24">
+            <div id="timer-panel">
+                <div class="time-block">
+                    <button class="btn-control btn-default">^</button>
+                    <span class="timer-time">00</span>
+                    <button class="btn-control btn-default">^</button>
+                </div>
+                <span class="colon">:</span>
+
+                <div class="time-block">
+                    <button class="btn-control btn-default">^</button>
+                    <span class="timer-time">00</span>
+                    <button class="btn-control btn-default">^</button>
+                </div>
+                <span class="colon">:</span>
+
+                <div class="time-block">
+                    <button class="btn-control btn-default">^</button>
+                    <span class="timer-time">00</span>
+                    <button class="btn-control btn-default">^</button>
+                </div>
             </div>
             <button type="button" id="start-timer" class="btn-default">
                 Start Timer

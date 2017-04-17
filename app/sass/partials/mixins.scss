@@ -1,0 +1,8 @@
+@mixin default-text-color($c) {
+    color: $c;
+}
+
+@mixin default-shadow($c)
+{
+    text-shadow: 0px -1px 0px $c;
+}
