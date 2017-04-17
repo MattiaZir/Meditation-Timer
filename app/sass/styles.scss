@@ -1,8 +1,28 @@
 @import "compass";
+@import "compass/css3/transition";
+@import "partials/base";
 @import "partials/variables";
 @import "partials/normalize";
 
+#nav-links {
+     padding: 40px 0 0 80px;
+     a {
+        color: $pistachio;
+        font-size: 2em;
+        @include default-shadow($pistachio);
+        padding-right: 30px;
+        text-decoration: none;
+        &:hover {
+            @include transition(all 150ms linear);
+            color: lighten($pistachio, 30%);
+            @include default-shadow(lighten($pistachio, 30%));
+        }
+    }
+}
 
-html {
-    font-family: 'Poppins', sans-serif;
+#timer-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

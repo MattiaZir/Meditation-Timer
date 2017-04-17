@@ -1,13 +1,28 @@
+@import "variables";
+@import "mixins";
+
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &:focus{
+        outline: none;
+    }
 }
 
 html {
     font-family: 'Poppins', sans-serif;
     background: $lightmossgreen;
     @include default-text-color($pistachio);
+}
+
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+main {
+    height: 100%;
 }
 
 #wrapper {
