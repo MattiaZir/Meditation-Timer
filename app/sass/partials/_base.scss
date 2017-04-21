@@ -18,11 +18,14 @@ html {
 
 html, body {
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
 }
 
 main {
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #wrapper {

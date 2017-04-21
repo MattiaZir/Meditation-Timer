@@ -2,11 +2,11 @@
 @import "compass/css3/transition";
 @import "partials/base";
 @import "partials/variables";
-@import "partials/normalize";
+@import "partials/buttons";
 
 #nav-links {
-     padding: 40px 0 0 80px;
-     a {
+    padding: 40px 0 0 80px;
+    a {
         color: $pistachio;
         font-size: 2em;
         @include default-shadow($pistachio);
@@ -20,9 +20,15 @@
     }
 }
 
+
 #timer-wrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+
+    .timer-text {
+        font-size: 4em;
+    }
+
+    .row {
+        text-align: center;
+    }
 }

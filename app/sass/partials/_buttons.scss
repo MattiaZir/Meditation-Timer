@@ -1,0 +1,27 @@
+.btn {
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-default {
+    @include default-shadow($pistachio);
+    background-color: $pistachio;
+    color: lighten($pistachio, 30%);
+
+    &:hover {
+        background-color: lighten($pistachio, 10%);
+    }
+    &:active {
+        background-color: lighten($pistachio, 15%);
+    }
+}
+
+.btn-control {
+    width: 72px;
+    height: 72px;
+    font-size: 3em;
+}
+
+.btn-center {
+    margin: 0 18pt;
+}
