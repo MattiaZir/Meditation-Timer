@@ -7,15 +7,15 @@
 #nav-links {
     padding: 40px 0 0 80px;
     a {
-        color: $pistachio;
+        color: $defaultcolor;
         font-size: 2em;
-        @include default-shadow($pistachio);
+        @include default-shadow($defaultcolor);
         padding-right: 30px;
         text-decoration: none;
         &:hover {
             @include transition(all 150ms linear);
-            color: lighten($pistachio, 30%);
-            @include default-shadow(lighten($pistachio, 30%));
+            color: lighten($defaultcolor, 30%);
+            @include default-shadow(lighten($defaultcolor, 30%));
         }
     }
 }
@@ -31,4 +31,9 @@
     .row {
         text-align: center;
     }
+}
+
+#stoppause-control {
+    margin-top: 20px;
+    display: none;
 }

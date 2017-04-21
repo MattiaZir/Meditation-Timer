@@ -43,12 +43,12 @@ main {
 /* line 1, ../sass/partials/_buttons.scss */
 .btn {
   border: none;
+  text-align: center;
   border-radius: 10px;
 }
 
-/* line 6, ../sass/partials/_buttons.scss */
+/* line 7, ../sass/partials/_buttons.scss */
 .btn-default {
-  text-shadow: 0px -1px 0px #A4C46D;
   background-color: #A4C46D;
   color: #e8f0da;
 }
@@ -71,6 +71,55 @@ main {
 /* line 25, ../sass/partials/_buttons.scss */
 .btn-center {
   margin: 0 18pt;
+}
+
+/* line 29, ../sass/partials/_buttons.scss */
+.btn-stop-pause {
+  width: 49%;
+  height: 80px;
+  font-size: 2em;
+  padding: 0;
+}
+
+/* line 36, ../sass/partials/_buttons.scss */
+#btn-start {
+  font-size: 2em;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 80px;
+}
+
+/* line 44, ../sass/partials/_buttons.scss */
+#btn-stop {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #E4572E;
+  color: #f6c4b5;
+}
+/* line 50, ../sass/partials/_buttons.scss */
+#btn-stop:hover {
+  background-color: #ea7b5b;
+}
+/* line 53, ../sass/partials/_buttons.scss */
+#btn-stop:active {
+  background-color: #ed8d72;
+}
+
+/* line 58, ../sass/partials/_buttons.scss */
+#btn-pause {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #FFC914;
+  color: #ffecad;
+}
+/* line 64, ../sass/partials/_buttons.scss */
+#btn-pause:hover {
+  background-color: #ffd547;
+}
+/* line 67, ../sass/partials/_buttons.scss */
+#btn-pause:active {
+  background-color: #ffdb61;
 }
 
 /* line 7, ../sass/styles.scss */
@@ -106,4 +155,10 @@ main {
 /* line 31, ../sass/styles.scss */
 #timer-wrapper .row {
   text-align: center;
+}
+
+/* line 36, ../sass/styles.scss */
+#stoppause-control {
+  margin-top: 20px;
+  display: none;
 }
