@@ -156,8 +156,13 @@ main {
 #timer-wrapper .row {
   text-align: center;
 }
+/* line 34, ../sass/styles.scss */
+#timer-wrapper .row .timer-int {
+  display: inline-block;
+  width: 82px;
+}
 
-/* line 36, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 #stoppause-control {
   margin-top: 20px;
   display: none;

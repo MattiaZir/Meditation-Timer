@@ -3,15 +3,17 @@
 {% block content %}
 <div id="timer-wrapper">
     <div class="row">
-        <button class="btn btn-default btn-control">+</button>
-        <button class="btn btn-default btn-control btn-center">+</button>
-        <button class="btn btn-default btn-control">+</button>
+        <button id="add-hours" class="btn btn-default btn-control">+</button>
+        <button id="add-mins" class="btn btn-default btn-control btn-center">+</button>
+        <button id="add-secs" class="btn btn-default btn-control">+</button>
     </div>
-    <div class="row timer-text">00:00:00</div>
+    <div class="row timer-text">
+        <span id="hours" class="timer-int">00</span>:<span id="minutes" class="timer-int">00</span>:<span id="seconds" class="timer-int">00</span>
+    </div>
     <div class="row">
-        <button class="btn btn-default btn-control">-</button>
-        <button class="btn btn-default btn-control btn-center">-</button>
-        <button class="btn btn-default btn-control">-</button>
+        <button id="subtract-hours" class="btn btn-default btn-control">-</button>
+        <button id="subtract-mins" class="btn btn-default btn-control btn-center">-</button>
+        <button id="subtract-secs" class="btn btn-default btn-control">-</button>
     </div>
     <button id="btn-start" class="btn btn-default">START TIMER</button>
     <div id="stoppause-control" class="row">
