@@ -22,14 +22,11 @@ function performOperation(element, increasing) {
     var maxValues = {"#hours": 24, "#minutes": 59, "#seconds": 59};
     var time = $(element).html();
 
-    if(increasing) {
-        if(time < maxValues[element]) {
-            time++
-        }
-    } else {
-        if(time > 0) {
-            time--
-        }
+    if(increasing && (time < maxValues[element])) {
+        time++
+    }
+    else if(time > 0) {
+        time--
     }
 
     $(element).html(pad(time));
@@ -56,7 +53,6 @@ function countdown(milliseconds) {
         }
     }, 1000);
 }
-
 function checkDigits() {
     var hoursDiv = $("#hours"),
         minutesDiv = $("#minutes"),
