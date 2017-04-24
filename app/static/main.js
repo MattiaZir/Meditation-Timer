@@ -1,9 +1,10 @@
 $(document).ready(function () {
 
     $("#add-hours, #add-minutes, #add-seconds,\
-    #subtract-hours, #subtract-minutes, #subtract-seconds").click(function(event) {
+    #subtract-hours, #subtract-minutes, #subtract-seconds").mousedown(function(event) {
         controlClickHandler(this);
     });
+    $("#btn-start").click(startTimer);
 
 });
 
@@ -17,14 +18,17 @@ function controlClickHandler(clickedElement) {
     var time = $(element).html();
 
     $(element).html(performOperation(element, time, operation));
-}
 
+
+}
 function performOperation(element, time, operation) {
     var maxValues = {"#hours": 24, "#minutes": 59, "#seconds": 59};
 
     if(operation === "add") {
         if(time < maxValues[element]) {
             time++;
+        } else {
+
         }
     } else {
         if(time > 0) {
@@ -41,4 +45,13 @@ function performOperation(element, time, operation) {
     }
 
     return time;
+}
+function startTimer() {
+    var hours = parseInt($("#hours").html()),
+        minutes = parseInt($("#minutes").html()),
+        seconds = parseInt($("#seconds").html());
+    var date = new Date();
+    date.setHours(hours);
+    date.setMinutes(minutes);
+    date.setSeconds(seconds);
 }
