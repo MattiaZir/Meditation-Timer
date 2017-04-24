@@ -1,4 +1,10 @@
+var hoursDiv, minutesDiv, secondsDiv;
+
+// FIXME: Memory leak
 $(document).ready(function () {
+    hoursDiv = $("#hours");
+    minutesDiv = $("#minutes");
+    secondsDiv = $("#seconds");
 
     $("#add-hours, #add-minutes, #add-seconds,\
     #subtract-hours, #subtract-minutes, #subtract-seconds").mousedown(function(event) {
@@ -36,9 +42,9 @@ function pad(n) {
     return (n < 10) ? ("0" + n) : n;
 }
 function startTimer() {
-    var hours = parseInt($("#hours").html()),
-        minutes = parseInt($("#minutes").html()),
-        seconds = parseInt($("#seconds").html());
+    var hours = parseInt(hoursDiv.html()),
+        minutes = parseInt(minutesDiv.html()),
+        seconds = parseInt(secondsDiv.html());
         milliseconds = (hours * 3600000) + (minutes * 60000) + (seconds * 1000);
 
         countdown(milliseconds);
@@ -49,15 +55,12 @@ function countdown(milliseconds) {
             clearInterval(interval);
         } else {
             checkDigits();
-            milliseconds -= 1000
+            milliseconds -= 1000;
         }
     }, 1000);
 }
 function checkDigits() {
-    var hoursDiv = $("#hours"),
-        minutesDiv = $("#minutes"),
-        secondsDiv = $("#seconds"),
-        hours = parseInt(hoursDiv.html()),
+    var hours = parseInt(hoursDiv.html()),
         minutes = parseInt(minutesDiv.html()),
         seconds = parseInt(secondsDiv.html());
 
