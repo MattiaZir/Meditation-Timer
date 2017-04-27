@@ -1,0 +1,151 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  background: #CDDEAF;
+  color: #A4C46D;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrapper {
+  background-color: #CDDEAF;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btn-default {
+  background-color: #A4C46D;
+  color: #e8f0da;
+}
+
+.btn-default:hover {
+  background-color: #bbd391;
+}
+
+.btn-default:active {
+  background-color: #c6daa3;
+}
+
+.btn-control {
+  width: 72px;
+  height: 72px;
+  font-size: 3em;
+}
+
+.btn-center {
+  margin: 0 18pt;
+}
+
+.btn-stop-pause {
+  width: 49%;
+  height: 80px;
+  font-size: 1.8em;
+  padding: 0;
+}
+
+#btn-start {
+  font-size: 2em;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 80px;
+}
+
+#btn-stop {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #E4572E;
+  color: #f6c4b5;
+}
+
+#btn-stop:hover {
+  background-color: #ea7b5b;
+}
+
+#btn-stop:active {
+  background-color: #ed8d72;
+}
+
+#btn-pause {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #FFC914;
+  color: #ffecad;
+}
+
+#btn-pause:hover {
+  background-color: #ffd547;
+}
+
+#btn-pause:active {
+  background-color: #ffdb61;
+}
+
+#nav-links {
+  padding: 40px 0 0 80px;
+}
+
+#nav-links a {
+  color: #A4C46D;
+  font-size: 2em;
+  text-shadow: 0px -1px 0px #A4C46D;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+#nav-links a:hover {
+  transition: all 150ms linear;
+  color: #e8f0da;
+  text-shadow: 0px -1px 0px #e8f0da;
+}
+
+#timer-wrapper {
+  margin: 0 auto;
+}
+
+#timer-wrapper .timer-text {
+  font-size: 4em;
+}
+
+#timer-wrapper .row {
+  text-align: center;
+}
+
+#timer-wrapper .row .timer-int {
+  display: inline-block;
+  width: 82px;
+}
+
+#stoppause-control {
+  margin-top: 20px;
+  display: none;
+}

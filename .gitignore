@@ -1,8 +1,0 @@
-
-*.db
-
-*.pyc
-
-Flask/
-
-app/\.sass-cache/
